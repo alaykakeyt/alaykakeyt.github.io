@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alaica's Portfolio</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="gallery.js"></script>
+    <link rel="icon" type="image/png" href="images/pic.png" />
+</head>
+
+<body>
+    <header>
+        <div class="left-corner">
+            <img id="nav-image" src="/images/pic.png" width="50" height="50" />
+            <h3 id="nav-header">alaykakeyt</h3>
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="myFamily.html">My Family</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="myFamily-teks">
+            <h2>My Gallery</h2>
+            <h3>Snapshots of My Favorite Moments</h3>
+            <br />
+
+            <div class="pics">
+                <div class="image-container">
+                    <div class="cover" onclick="toggleCategory('family')">
+                        <img src="images/family/family.png" alt="Family Cover" />
+                        <h3 class="title">Family</h3>
+                    </div>
+                    <div class="cover" onclick="toggleCategory('friends')">
+                        <img src="images/friends/friends.png" alt="Friends Cover" />
+                        <h3 class="title">Friends</h3>
+                    </div>
+                    <div class="cover" onclick="toggleCategory('pets')">
+                        <img src="images/pets/pets.png" alt="Pets Cover" />
+                        <h3 class="title">Pets</h3>
+                    </div>
+                    <div class="cover" onclick="toggleCategory('self')">
+                        <img src="images/self/self.png" alt="Self Cover" />
+                        <h3 class="title">Self</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="newdiv">
+                <div id="family" class="gallery-section">
+                    <div class="gallery">
+                        <img src="images/family/family01.jpg" alt="Family Image 1" />
+                        <img src="images/family/family02.jpg" alt="Family Image 2" />
+                        <img src="images/family/family03.jpg" alt="Family Image 3" />
+                        <img src="images/family/family04.jpg" alt="Family Image 4" />
+                        <img src="images/family/family05.jpg" alt="Family Image 5" />
+                        <img src="images/family/family06.jpg" alt="Family Image 6" />
+                        <img src="images/family/family07.jpg" alt="Family Image 7" />
+                        <img src="images/family/family08.jpg" alt="Family Image 8" />
+                        <img src="images/family/family09.jpg" alt="Family Image 9" />
+                        <img src="images/family/family10.jpg" alt="Family Image 10" />
+                        <img src="images/family/family11.jpg" alt="Family Image 11" />
+                        <img src="images/family/family12.jpg" alt="Family Image 12" />
+                        <img src="images/family/family13.jpg" alt="Family Image 13" />
+                        <img src="images/family/family14.jpg" alt="Family Image 14" />
+                        <img src="images/family/family15.jpg" alt="Family Image 15" />
+
+                    </div>
+                </div>
+
+                <div id="friends" class="gallery-section">
+                    <div class="gallery">
+                        <img src="images/friends/friends01.jpg" alt="Friends Image 1" />
+                        <img src="images/friends/friends02.jpg" alt="Friends Image 2" />
+                        <img src="images/friends/friends03.jpg" alt="Friends Image 3" />
+                        <img src="images/friends/friends04.jpg" alt="Friends Image 4" />
+                        <img src="images/friends/friends05.jpg" alt="Friends Image 5" />
+                        <img src="images/friends/friends06.jpg" alt="Friends Image 6" />
+                        <img src="images/friends/friends07.jpg" alt="Friends Image 7" />
+                        <img src="images/friends/friends08.jpg" alt="Friends Image 8" />
+                
+                    </div>
+                </div>
+                <div id="pets" class="gallery-section">
+                    <div class="gallery">
+                        <img src="images/pets/pets01.jpg" alt="Pets Image 1" />
+                        <img src="images/pets/pets02.jpg" alt="Pets Image 2" />
+                        <img src="images/pets/pets03.jpg" alt="Pets Image 3" />
+                        <img src="images/pets/pets04.jpg" alt="Pets Image 4" />
+                        <img src="images/pets/pets05.jpg" alt="Pets Image 5" />
+                    </div>
+                </div>
+
+                <div id="self" class="gallery-section">
+                    <div class="gallery">
+                        <img src="images/self/self001.jpg" alt="Self Image 1" />
+                        <img src="images/self/self01.jpg" alt="Self Image 2" />
+                        <img src="images/self/self02.jpg" alt="Self Image 3" />
+                        <img src="images/self/self03.jpg" alt="Self Image 4" />
+                        <img src="images/self/self04.jpg" alt="Self Image 5" />
+                        <img src="images/self/self05.jpg" alt="Self Image 6" />
+                        <img src="images/self/self06.jpg" alt="Self Image 7" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alaica's Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" href="images/pic.png" />
+
+  </head>
+
+  <body>
+    <header>
+      <div class="left-corner">
+        <img id="nav-image" src="/images/pic.png" width="50" height="50" />
+        <h3 id="nav-header">alaykakeyt</h3>
+      </div>
+
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutMe.html">About Me</a>
+        <a href="myFamily.html">My Family</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <br />
+    <!-- <br id="hakdug">
+    <br id="hakdug2"> -->
+    <div class="small-icon">
+      <img
+        id="home-image2"
+        src="images/pic.png"
+        alt="Alaica's Picture"
+        width="100"
+        height="100"
+      />
+      <h3 id="icon-header">alaykakeyt</h3>
+    </div>
+    <br id="hakdug3" />
+    <main>
+      <!-- <img id="home-image" src="images/pic.png" alt="Alaica's Picture" /> -->
+      <div id="home-teks">
+        <div>
+          <div id="home-tekss">
+            <h2>Let’s Stay in Touch!</h2>
+            <h3>You can reach me through:</h3>
+          </div>
+          <div>
+            <div class="social" id="email1">
+              <a class="icons" href="mailto:alaicakyte@gmail.com">
+              <img src="images/icons/email.png" width="30" height="30" />
+             </a>
+              <p class="socialID">Email: <a href="mailto:alaicakyte@gmail.com">alaicakyte@gmail.com</a>
+              </p>
+            </div>
+
+            <div class="social" id="fb">
+              <a class="icons" href="https://www.facebook.com/alaykaa" target="_blank">
+              <img src="images/icons/fb.png" width="30" height="30" />
+              </a>
+              <p class="socialID" id="fb">
+                Facebook:
+                <a href="https://www.facebook.com/alaykaa" target="_blank">Alaica Kyte Arriola</a>
+              </p>
+            </div>
+
+            <div class="social" id="ig">
+              <a  class="icons" href="https://www.instagram.com/alaykakeyt/" target="_blank">
+                <img src="images/icons/ig.png" width="30" height="30" />
+              </a>
+              <p class="socialID">Instagram: <a href="https://www.instagram.com/alaykakeyt/" target="_blank">alaykakeyt</a>
+              </p>
+            </div>
+
+            <div class="social" id="tt">
+              <a class="icons" href="https://www.tiktok.com/@alaykakeyt" target="_blank">
+                <img src="images/icons/tt.png" width="30" height="30" />
+              </a>
+              <p class="socialID">TitTok: alaykakeyt
+                <a href="https://www.tiktok.com/@alaykakeyt" target="_blank"
+                  >alaykakeyt</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <h2>Send a Message Here</h2>
+
+          <form
+            id="contactForm"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            onsubmit="return validateForm()">
+            <input
+              type="hidden"
+              name="access_key"
+              value="08b75556-b150-41b1-8a5b-985e08dfe9b2"/>
+
+            <div class="input-row">
+              <div class="input-group">
+                <label>Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your Name"
+                  required/>
+              </div>
+
+              <div class="input-group">
+                <label><br />Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="youremail@gmail.com"
+                  required/>
+              </div>
+            </div>
+
+            <label>Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="10"
+              placeholder="Enter your Message" ></textarea>
+
+            <button type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

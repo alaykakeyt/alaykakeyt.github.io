@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alaica's Portfolio</title>
+    <link rel="icon" type="image/png" href="images/pic.png" />
+
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+            padding-bottom: 15px;
+        }
+
+        header {
+            background-color: #2e2421;
+            padding: 10px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #c5b6ab;
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background: linear-gradient(45deg, #5e4b43, #443732);
+        }
+
+        main {
+            border: #ac8678;
+            border-style: ridge;
+            padding: 20px;
+            margin: 0 auto;
+            width: 93%;
+            background-color: #f5f2ed;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 100px;
+        }
+
+        main div {
+
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div[id*="main-"] {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        main div div[id*="main-"] img {
+            border: #ac8678;
+            border-style: dotted;
+            padding: 20px;
+            margin-top: 20px;
+            width: (200px, 80%);
+            background-color: #ebe2d5;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            transition: all 0.5s ease;
+        }
+
+        main div div[id*="main-"] {
+            transition: all 0.5s ease;
+        }
+
+        main div div[id*="main-"]:hover {
+            transform: translate(0, -10px);
+        }
+
+  
+        .family {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mother {
+            width: 50;
+            height: 50;
+        }
+
+        #myFamily-teks h2 {
+            font-size: 2rem;
+            padding: 0 20px;
+            color: #4b3b35;
+            margin-bottom: -20px;
+        }
+
+        #myFamily-teks h3 {
+            font-size: 1.5rem;
+            margin-bottom: -10px;
+            color: #241b18;
+            opacity: 80%;
+            padding: 0 20px;
+
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .name{
+          font-weight: bold;
+          font-size: 18px;
+          color: #4b3b35;
+          font-size: larger;
+        }
+        .relation{
+          margin-top: -20px;
+        }
+
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                text-align: center;
+                padding: 1px;
+                margin-top: 80px;
+            }
+        }
+
+        #nav-image {
+            border-radius: 50%;
+            background-color: #555;
+            display: inline-block;
+        }
+
+        #nav-header {
+            margin: 0;
+            font-size: 1.5rem;
+            float: right;
+            padding: 10px;
+            color: #c5b6ab;
+        }
+
+        .left-corner {
+            display: flex;
+            align-items: center;
+        }
+
+        main div div[id*="main-"] img {
+            display: flex;
+            border: #ac8678;
+            border-style: dotted;
+            padding: 20px;
+            margin-top: 20px;
+            width: min(300px, 80%);
+            background-color: #ebe2d5;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .image-container {
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        main {
+            flex-direction: row;
+            text-align: center;
+            padding-bottom: 20px;
+            justify-content: center;
+        }
+
+
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .image-container {
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                gap: 10px;
+                width: 100%;
+                justify-content: center;
+                line-height: 2;
+
+            }
+
+            nav a {
+                font-size: 0.8rem;
+                padding: 1px;
+                flex: 1;
+                text-align: center;
+                background-color: #3a2e2a;
+                color: #fff;
+            }
+
+            nav a:hover {
+                background: linear-gradient(45deg, #5e4b43, #443732);
+            }
+
+            #nav-header,
+            #nav-image {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left-corner">
+            <img id="nav-image" src="/images/pic.png" width="50" height="50" />
+            <h3 id="nav-header">alaykakeyt</h3>
+        </div>
+
+        
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="myFamily.html">My Family</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+   
+    <main>
+        <div id="myFamily-teks">
+            <h2>Meet my Family</h2>
+            <h3>The People Who Inspire and Support Me</h3>
+            <br>
+
+            <div class="image-container">
+                <div id="main-mother">
+                    <img id="mother" src="images/mother.png"  width="300" />
+                    <span class="name">Milca Arriola</span>
+                    <span class="relation">(Mother)</span>
+                </div>
+                <br>
+                <div id="main-sister">
+                    <img id="sister" src="images/sister.png" width="300" />
+                    <span class="name">Arianne Arriola</span>
+                    <span class="relation">(Eldest Sister)</span>
+
+                </div>
+                <br>
+                <div id="main-father">
+                    <img id="father" src="images/father.png"  width="300" />
+                    <span class="name">Aldwin Arriola</span>
+                    <span class="relation">(Father)</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

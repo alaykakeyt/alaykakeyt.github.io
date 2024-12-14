@@ -1,0 +1,238 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #333;
+    padding-bottom: 15px;
+}
+
+header {
+    background-color: #2e2421;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 60px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #c5b6ab;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background: linear-gradient(45deg, #5e4b43, #443732);
+}
+
+main {
+    border: #ac8678;
+    border-style: ridge;
+    padding: 20px;
+    margin: 0 auto;
+    width: 93%;
+    background-color: #f5f2ed;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 19px;
+}
+
+#home-teks h2 {
+    font-size: 2rem;
+    padding: 0 20px;
+    color: #4b3b35;
+    margin-bottom: -20px;
+}
+
+#home-teks h3 {
+    font-size: 1.5rem;
+    margin-bottom: -10px;
+    color: #241b18;
+    opacity: 80%;
+    padding: 0 20px;
+}
+
+#home-teks p {
+    font-size: 1.1rem;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#home-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#home-image2 {
+    display: none;
+}
+
+#icon-header {
+    display: none;
+}
+
+#hakdug3 {
+    display: none;
+}
+
+#home-teks {
+    flex: 1;
+}
+
+button {
+    float: right;
+    padding: 10px 20px;
+    background-color: #290907;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button a {
+    text-decoration: none;
+    color: #c5b6ab;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        text-align: center;
+        padding: 1px;
+    }
+
+    #home-image {
+        order: 1;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #home-image2 {
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #7e6b64;
+        margin: 0 auto;
+    }
+
+    .small-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #icon-header {
+        margin: 0;
+        font-size: 1.5rem;
+        padding-top: 5px;
+        color: #503a32;
+        display: flex;
+        justify-content: center;
+    }
+
+    #hakdug3 {
+        display: inline;
+    }
+
+    #home-teks {
+        order: 2;
+    }
+}
+
+#nav-image {
+    border-radius: 50%;
+    background-color: #555;
+    display: inline-block;
+}
+
+#nav-header {
+    margin: 0;
+    font-size: 1.5rem;
+    float: right;
+    padding: 10px;
+    color: #c5b6ab;
+}
+
+.left-corner {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+        line-height: 2;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        padding: 1px;
+        flex: 1;
+        text-align: center;
+        background-color: #3a2e2a;
+        color: #fff;
+    }
+
+    nav a:hover {
+        background: linear-gradient(45deg, #5e4b43, #443732);
+    }
+
+    #nav-header,
+    #nav-image {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #home-teks {
+        order: 2;
+    }
+
+    #home-image {
+        display: none;
+    }
+
+    button {
+        float: none;
+    }
+}

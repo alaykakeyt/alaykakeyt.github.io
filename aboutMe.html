@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alaica's Portfolio</title>
+    <link rel="stylesheet" href="aboutMe.css">
+    <link rel="icon" type="image/png" href="images/pic.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="left-corner">
+        <img id="nav-image" src="/images/pic.png" width="50" height="50" />
+        <h3 id="nav-header">alaykakeyt</h3>
+      </div>
+
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutMe.html">About Me</a>
+        <a href="myFamily.html">My Family</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <br />
+    <!-- <br id="hakdug">
+    <br id="hakdug2"> -->
+    <div class="small-icon">
+      <img
+        id="home-image2"
+        src="images/pic.png"
+        alt="Alaica's Picture"
+        width="100"
+        height="100"
+      />
+      <h3 id="icon-header">alaykakeyt</h3>
+    </div>
+    <br id="hakdug3" />
+    <main>
+      <div id="aboutMe-teks">
+        <h2>Get to Know Me</h2>
+        <h3>A Peek to My World</h3>
+      </div>
+
+      <div class="col2">
+        <div class="box">
+          <div class="aboutMe-teks">
+            <h3 class="teks">Personal Information</h3>
+          </div>
+          <div>
+            <img
+              id="profile-image"
+              src="images/profile.png"
+              alt="Alaica's Picture"
+            />
+          </div>
+          <section id="main-profile">
+            <p style="text-align: justify">
+              I am <b style="color: #4b3b35; font-size: larger">Alaica Kyte I. Arriola</b> and I’m 19 years old. I was born on November 13, 2004. I am a
+              second year student and currently taking a Bachelor of Science in
+              Information Technology at Camarines Norte State College.
+            </p>
+          </section>
+        </div>
+        <div class="box2">
+          <div class="aboutMe-teks">
+            <h3 class="teks">Education</h3>
+          </div>
+          <div id="progress-bar-container">
+            <ul>
+              <li class="step step01 active">
+                <div class="step-inner">Primary</div>
+              </li>
+              <li class="step step02">
+                <div class="step-inner">Secondary</div>
+              </li>
+              <li class="step step03">
+                <div class="step-inner">Tertiary</div>
+              </li>
+            </ul>
+
+            <div id="line">
+              <div id="line-progress"></div>
+            </div>
+          </div>
+
+          <div id="progress-content-section">
+            <div class="section-content discovery active">
+              <h2 class="location">Vinzons Pilot Elementary School</h2>
+              <p class="level">Elementary</p>
+              <img class="school" src="images/primary.png" />
+            </div>
+
+            <div class="section-content strategy">
+              <h2 class="location">Vinzons Pilot High School</h2>
+              <p class="level">Secondary</p>
+              <img class="school" src="images/secondary.png" />
+            </div>
+
+            <div class="section-content creative">
+              <h2 class="location">Camarines Norte State College</h2>
+              <p class="level">Tertiary</p>
+              <img class="school" src="images/tertiary.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="box3">
+          <div class="aboutMe-teks">
+            <h3 class="teks">Hobbies</h3>
+          </div>
+          <p style="text-align: justify">
+            My hobbies are
+            <b style="color: #4b3b35; font-size: larger"
+              >watching movies and tv series</b
+            >
+            and
+            <b style="color: #4b3b35; font-size: larger">doing crochets. </b>
+            Those hobbies allows me to express my creativity and unwind. Through
+            my experiences and interests, I continue to explore my passions and
+            strive to grow both personally.
+          </p>
+        </div>
+
+        <div class="box4">
+          <div class="aboutMe-teks">
+            <h3 class="teks">Motto</h3>
+          </div>
+          <div class="quote-container">
+            <div class="decorative-line"></div>
+            <div class="text">
+              <div class="quote">
+                "As long as I am still alive, go on learning and never give up."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+    $(".step").click(function () {
+      $(this).addClass("active").prevAll().addClass("active");
+      $(this).nextAll().removeClass("active");
+    });
+
+    $(".step01").click(function () {
+      $("#line-progress").css("width", "10%");
+      $(".discovery").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step02").click(function () {
+      $("#line-progress").css("width", "50%");
+      $(".strategy").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step03").click(function () {
+      $("#line-progress").css("width", "90%");
+      $(".creative").addClass("active").siblings().removeClass("active");
+    });
+  </script>
+</html>
